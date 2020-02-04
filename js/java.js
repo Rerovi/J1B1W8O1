@@ -14,6 +14,10 @@ var zestienSnacksAmount;
 var zestienSnacksTotal = 0;
 var zestienSnacksPrijs = 7.50;
 var totalPrice = 0;
+
+function opnieuw() {
+    startOrder(prompt("Welke bestelling wilt u toevoegen?").toLowerCase());
+}
 function startOrder(decision) {
     console.log(decision);
     if (decision === "fris") {
@@ -42,6 +46,9 @@ function startOrder(decision) {
     } else if (decision === "stop") {
         alert("Uw rekening wordt uitgeprint.");
         bill();
+    } else if (decision != "snack", "stop", "wijn", "bier", "fris") {
+        alert("Sorry dit kunt u niet invullen");
+        opnieuw();
     }
 }
 
@@ -71,24 +78,29 @@ function bill() {
 
     if (frisTotal > 0) {
         document.write(frisTotal + " x fris &euro;" + frisPrijs.toFixed(2) + "<br>");
-    } else {
+    } else if (frisTotal < 1){
+
     }
     if (bierTotal > 0) {
         document.write(bierTotal + " x bier &euro;" + bierPrijs.toFixed(2) + "<br>");
-    } else {
+    } else if (bierTotal <1){
+
     }
-    if (bierTotal > 0) {
+    if (wijnTotal > 0) {
         document.write(wijnTotal + " x wijn &euro;" + wijnPrijs.toFixed(2) + "<br>");
-    } else {
+    } else if (wijnTotal < 1){
+
     }
     totalPrice = totalPrice + frisPrijs + bierPrijs + wijnPrijs + achtSnacksPrijs + zestienSnacksPrijs;
     if (achtSnacksTotal > 0) {
         document.write(achtSnacksTotal + " x " + " bitterbalschaal van 8 stuks &euro; " + achtSnacksPrijs.toFixed(2) + "<br>");
-    } else {
+    } else if (achtSnacksTotal < 1) {
+
     }
     if (zestienSnacksTotal > 0) {
         document.write(zestienSnacksTotal + " x " + " bitterbalschaal van 16 stuks &euro; " + zestienSnacksPrijs.toFixed(2) + "<br>");
-    } else {
+    } else if (zestienSnacksTotal < 1) {
+        
     }
     if (totalPrice === 0) {
         document.write("U heeft niks op bestelling staan.");

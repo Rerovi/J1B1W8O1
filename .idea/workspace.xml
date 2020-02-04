@@ -13,6 +13,20 @@
       <executable />
     </execution>
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -26,7 +40,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$USER_HOME$/AppData/Local/Temp/Temp1_J1B1W8.zip/J1B1W8/Opdracht/horecaApp.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/js/java.js" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="1TBm14LhlwgTf49MCuiJphf7pp4" />
   <component name="PropertiesComponent">
@@ -60,6 +74,7 @@
       <workItem from="1572941645915" duration="305000" />
       <workItem from="1572947602097" duration="1953000" />
       <workItem from="1573028599377" duration="7420000" />
+      <workItem from="1580717372198" duration="115000" />
     </task>
     <servers />
   </component>
